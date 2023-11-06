@@ -1,0 +1,695 @@
+* {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.navbar :hover {
+  color: white;
+}
+.navbar.scrolling-active {
+  background-color: #000000cb;
+  padding: 8px 0 8px 0;
+}
+
+.navbar i {
+  color: white;
+}
+
+.navbar .logo img {
+  height: 60px;
+  display: flex;
+  aspect-ratio: 16/9;
+}
+
+/* Navbar */
+
+/* Header */
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../assets/img/primary-img.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  animation: change 10s infinite ease-in-out;
+}
+
+@keyframes change {
+  0% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../../assets/img/primary-img.jpg");
+  }
+  50% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../../assets/img/primary-img2.jpg");
+  }
+  100% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("../../assets/img/primary-img3.jpg");
+  }
+}
+
+.header h1 {
+  color: white;
+  --animate-delay: 1.7s;
+  line-height: 1.5;
+}
+
+.header p {
+  color: white;
+  --animate-delay: 1.7s;
+}
+/* Header */
+
+/* Package */
+
+.package-wedding {
+  padding: 80px 0 40px 0;
+}
+
+.package-wedding-box .box:nth-child(1) {
+  margin-bottom: 32px;
+}
+
+.package-wedding-box .box:nth-child(1) h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.package-wedding-box .box:nth-child(2) {
+  position: relative;
+  height: 100%;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+/* Swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+.swiper-slide a {
+  height: 400px;
+  text-align: center;
+  font-size: 14px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.swiper-slide a :active {
+  cursor: grabbing;
+}
+
+.swiper-slide:hover .price {
+  transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  opacity: 1;
+}
+
+.swiper-slide .price {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  padding: 30px 0 30px 0;
+  color: rgb(255, 255, 255);
+  transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -o-transform: scaleY(0);
+  transform-origin: bottom;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  opacity: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.swiper-slide .price h3 {
+  font-size: 18px;
+}
+.swiper-slide .price p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 10px;
+}
+
+.swiper-slide .price p i {
+  color: white;
+  margin-right: 2px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+/* Swiper */
+
+@media screen and (max-width: 475px) {
+  .package-wedding-box .box:nth-child(1) h1 {
+    font-size: 30px;
+  }
+}
+
+/* Package */
+
+/* Testimonial */
+
+.testimonial {
+  padding: 40px 0 40px 0;
+}
+
+/* Testimonial */
+
+/* Vendor */
+.vendor {
+  padding: 40px 0 40px 0;
+}
+
+.row .nama-vendor {
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+}
+
+.nama-vendor img {
+  object-fit: cover;
+  width: 207px;
+  height: 350px;
+  text-align: center;
+  display: flex;
+  filter: grayscale(100);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-filter: grayscale(100);
+}
+
+.nama-vendor .detail-vendor {
+  font-size: 18px;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 207px;
+  padding: 25px 0 25px 0;
+  color: rgb(255, 255, 255);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.detail-vendor h5 {
+  font-size: 18px;
+  line-height: 2;
+}
+
+.detail-vendor a {
+  width: 150px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .nama-vendor img {
+    width: 270px;
+    height: 400px;
+    display: flex;
+  }
+
+  .nama-vendor .detail-vendor {
+    width: 270px;
+  }
+}
+/* Vendor */
+
+/* Office */
+.office {
+  padding: 40px 0 40px 0;
+}
+
+.office iframe {
+  width: 550px;
+  height: 300px;
+}
+
+.office img {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 475px) {
+  .office iframe {
+    width: 350px;
+    height: 200px;
+  }
+
+  .office img {
+    height: 300px;
+  }
+}
+/* Office */
+
+/* About Us */
+/* .about {
+  padding-top: 40px;
+} */
+
+.about .team {
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
+}
+
+.about .team img {
+  text-align: center;
+  display: flex;
+  width: 600px;
+  height: fit-content;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.team .detail-team {
+  position: absolute;
+  bottom: 15px;
+}
+
+.team .detail-team a {
+  font-weight: 400;
+  width: 180px;
+}
+
+@media screen and (max-width: 475px) {
+  .about .team img {
+    width: 90vw;
+    height: fit-content;
+  }
+}
+/* About Us */
+
+/* Why MWP */
+.why-mwp {
+  padding: 20px 0 80px 0;
+}
+
+.why-mwp .card {
+  width: 275px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #212121;
+  border-radius: 20px;
+  padding: 30px;
+  gap: 10px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.why-mwp .card:hover {
+  box-shadow: 0 0 10px rgba(241, 210, 9, 0.8);
+  border-color: #d09112;
+}
+
+.why-mwp .card .text {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.why-mwp .card .p {
+  color: #9e9da1;
+  font-size: 14px;
+  text-align: center;
+}
+/* Why MWP */
+
+/* Contact Us */
+.contact {
+  padding: 80px 0 80px 0;
+  border-radius: 40px;
+  display: flex;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+.contact a {
+  width: 200px;
+}
+/* Contact Us */
+
+/* Footer */
+.footer {
+  padding-top: 40px;
+  background: #000;
+  color: #fff;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+}
+
+.footer i img {
+  width: fit-content;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 30px;
+}
+
+.footer .col a {
+  color: #ffffff9a;
+}
+
+.footer .col a:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 475px) {
+  .footer {
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+  }
+
+  .footer i img {
+    width: fit-content;
+    height: 75px;
+  }
+}
+
+/* Footer */
+
+/* ?Custom Scroll */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d09112;
+  border-radius: 8px;
+}
+/* ?Custom Scroll */
+
+/* Vendor Detail */
+
+.vendor-mwp {
+  margin-top: 70px;
+  align-items: center;
+  justify-content: center;
+}
+
+.vendor-mwp .row .col {
+  margin-bottom: 50px;
+}
+
+.vendor-mwp img {
+  border-radius: 20px;
+  width: 264px;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Vendor Detail */
+
+/* Packages Detail */
+.detail-package {
+  margin-top: 70px;
+}
+
+.detail-package img {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  width: 350px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.detail-package h4 {
+  color: #d09112;
+  font-weight: bold;
+}
+
+.detail-package ul li {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.detail-package p {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+@media screen and (max-width: 991px) {
+  .detail-package ul li {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .detail-package p {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .detail-package ul li {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .detail-package p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.detail-package .card {
+  width: 190px;
+  height: 274px;
+  background: white;
+  padding: 0.4em;
+  border-radius: 6px;
+}
+
+.detail-package .card-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 120px;
+  border-radius: 6px 6px 0 0;
+}
+
+.detail-package .card-image:hover {
+  transform: scale(0.98);
+}
+
+.detail-package .nama-hotel {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(63, 121, 230);
+  padding: 10px 7px 0;
+}
+
+.detail-package .keterangan {
+  font-weight: 600;
+  font-size: 14px;
+  color: rgb(88, 87, 87);
+  padding: 20px;
+}
+
+.detail-package .price {
+  font-size: 14px;
+  color: #d09112;
+  font-weight: bolder;
+}
+/* Packages Detail */
+
+/* Team */
+.team-mwp {
+  margin-top: 70px;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-mwp .row .col {
+  margin-bottom: 10px;
+}
+
+.team-mwp img {
+  border-radius: 20px;
+  width: 200px;
+  height: 340px;
+  object-fit: cover;
+}
+
+.team-mwp video {
+  width: 900px;
+}
+
+@media screen and (max-width: 996px) {
+  .team-mwp video {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team-mwp video {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .team-mwp video {
+    width: 300px;
+  }
+}
+
+/* Team */
+
+/* Sosmed */
+.row .nama-detail ul {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+.nama-detail ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nama-detail ul li {
+  list-style: none;
+  margin: 0 5px;
+}
+
+.nama-detail ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-decoration: none;
+  font-size: 30px;
+  color: #000;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.nama-detail ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: -1;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -ms-transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nama-detail ul li a:hover {
+  color: #fff;
+}
+.nama-detail ul li a:hover:before {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+.nama-detail ul li:nth-child(1) a:hover:before {
+  background-color: crimson;
+}
+
+.nama-detail ul li:nth-child(2) a:hover:before {
+  background-color: #000;
+}
+
+.nama-detail ul li:nth-child(3) a:hover:before {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+/* .nama-detail ul li:nth-child(4) a:hover:before{
+  background-color:#25D366;
+} */
